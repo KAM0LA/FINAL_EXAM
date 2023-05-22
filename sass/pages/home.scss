@@ -300,9 +300,6 @@
         margin-bottom: 10px;
     }
 }
-
-// CLIENTS SECTION
-
 #clients {
     background: #F4F4F4;
 }
@@ -437,8 +434,6 @@
     }
 }
 
-// NEWS SECTION
-
 .news {
     padding: 120px 0;
 
@@ -472,7 +467,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 35px;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 50px;  
     }
 
     .news__card {
@@ -486,16 +481,26 @@
             border-top-right-radius: 14px;
             img {
                 width: 100%;
-                transition: 0.5s;
-            }
+                transition: 1s;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+}
             overflow: hidden;
         }
         
         &:hover img {
-            transform: scale(1.2);
+            transform: scale(1.7);
+            -webkit-transform: scale(1.7);
+            -moz-transform: scale(1.7);
+            -ms-transform: scale(1.7);
+            -o-transform: scale(1.7);
+         }
+       
+     
+    
         }
-
-    }
 
     .news__card__description{
         padding: 20px;
@@ -537,7 +542,7 @@
                 font-size: 16px;
                 line-height: 16px;
                 letter-spacing: 0.04em;
-                color: #BB2339;
+                color:var(--bgColor-red);
             }
         }
     }
@@ -560,8 +565,6 @@
         }
     }
 }
-
-// VIDEO SECTION
 
 #video-modal {
     padding-top: 120px;
@@ -591,9 +594,6 @@
         height: 380px;
     }
 }
-
-
-// Gallery Section
 
 #gallery {
     padding: 120px 0;
